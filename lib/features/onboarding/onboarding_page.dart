@@ -26,11 +26,12 @@ class OnboardingPage extends StatelessWidget {
                 right: 0,
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 24.0),
-                  child: Column(
+                  child: const Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       // Onboarding texts
                       OnboardingText(),
+                      SizedBox(height: 15),
                       // Get started button
                       OnboardingButton(),
                     ],
