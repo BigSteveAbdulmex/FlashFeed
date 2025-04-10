@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 import 'package:flashfeed/features/onboarding/widgets/background_img.dart';
-import 'package:flashfeed/features/onboarding/widgets/onboarding_button.dart';
 import 'package:flashfeed/features/onboarding/widgets/opacity_container.dart';
+import 'package:flashfeed/features/onboarding/widgets/onboarding_text.dart';
+import 'package:flashfeed/features/onboarding/widgets/onboarding_button.dart';
 
 class OnboardingPage extends StatelessWidget {
   const OnboardingPage({super.key});
@@ -28,26 +29,8 @@ class OnboardingPage extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      const Text(
-                        "FlashFeed",
-                        style: TextStyle(
-                          fontFamily: 'EduArrows',
-                          color: Colors.white,
-                          fontSize: 50,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      const SizedBox(height: 10),
-                      const Text(
-                        "Catch breaking news from anywhere, listen on the go with AI read-aloud, get straight to the point with AI summaries, and chat with AI like a knowledgeable friend. ",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 15.5,
-                          fontWeight: FontWeight.w400,
-                        ),
-                      ),
-                      const SizedBox(height: 16),
+                      // Onboarding texts
+                      OnboardingText(),
                       // Get started button
                       OnboardingButton(),
                     ],
